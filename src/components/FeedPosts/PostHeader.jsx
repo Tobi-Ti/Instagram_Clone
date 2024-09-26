@@ -20,7 +20,7 @@ const PostHeader = ({username, avatar}) => {
             <Text 
                 fontSize={12}
                 color={"blue.500"}
-                fontWeigh={"bold"}
+                fontWeight={"bold"}
                 _hover={{
                     color:"white",
                 }}
