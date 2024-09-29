@@ -4,7 +4,6 @@ import { collection, getDocs, query, where } from "firebase/firestore";
 import { firestore } from "../firebase/firebase";
 import useUserProfileStore from "../store/userProfileStore";
 
-
 const useGetUserProfileByUsername = (username) => {
 	const [isLoading, setIsLoading] = useState(true);
 	const showToast = useShowToast();
@@ -26,11 +25,8 @@ const useGetUserProfileByUsername = (username) => {
 
 				setUserProfile(userDoc);
 				console.log(userDoc);
-                
 			} catch (error) {
-
 				showToast("Error", error.message, "error");
-
 			} finally {
 				setIsLoading(false);
 			}
