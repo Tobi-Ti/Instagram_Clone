@@ -19,8 +19,6 @@ const ProfilePage = () => {
 				{!isLoading && userProfile && <ProfileHeader />}
 				{isLoading && <ProfileHeaderSkeleton />}
 			</Flex>
-
-
 			<Flex
 				px={{ base: 2, sm: 4 }}
 				maxW={"full"}
@@ -38,8 +36,7 @@ const ProfilePage = () => {
 
 export default ProfilePage;
 
-
-
+// skeleton for profile header
 const ProfileHeaderSkeleton = () => {
 	return (
 		<Flex
@@ -63,11 +60,7 @@ const UserNotFound = () => {
 	return (
 		<Flex flexDir='column' textAlign={"center"} mx={"auto"}>
 			<Text fontSize={"2xl"}>User Not Found</Text>
-			<Link as={RouterLink} to={"/"} 
-                color={"blue.500"} 
-                w={"max-content"} 
-                mx={"auto"}
-            >
+			<Link as={RouterLink} to={"/"} color={"blue.500"} w={"max-content"} mx={"auto"}>
 				Go home
 			</Link>
 		</Flex>
